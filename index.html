@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+th,td,tr{
+    color:white ;
+    border: white 3px dashed; 
+    padding: 20px;   
+}
+table{
+    border: aqua groove 10px;
+    padding: 20px;
+}
+body{
+    background-image: linear-gradient(#2AF5FF,#A5AA52,#454545);
+}
+</style>
+</head>
+<body>
+<center>
+    <h1>Job Registration form</h1>
+    <table>
+    <form method="POST" action="" name="Form1">
+        <tr>
+        <td> First Name: </td>
+        <td> <input maxlength="15" size="30" required name="First Name" placeholder="Please enter your first name" type="text"></td>
+        </tr>
+        <br>
+        <tr>
+        <td>Last Name:</td> 
+        <td><input  maxlength="20" size="30" required placeholder="Pleae enter your last name" name="Last name" type="text"></td>
+        </tr>   
+        <br>
+        <tr>
+        <td> Phone Number:</td>
+        <td><input placeholder="Please enter your phone number" required name="Phone number" maxlength="10" required size="30" type="tel"></td>
+        </tr>
+        <br>
+        <tr>
+         <td>   Email: </td>
+         <td><input   required maxlength="30" placeholder="Enter your email" name="email" type="email"></td>
+        </tr>
+        <br>
+        <tr>
+        <td>Date of Birth:</td>
+        <td><input name="dob" required maxlength="8" type="date"></td>
+        </tr>
+        <br>
+        <tr>
+        <td> Address:</td>
+        <td> <textarea placeholder="Enter your address" name="adress" id="" cols="40" rows="5"></textarea></td>
+        </tr>
+        <br>
+       <tr>
+      <td>   Gender:</td>
+      <td> Male <input name="gender1" type="radio"> female <input name="gender1" type="radio"></td>
+       </tr>
+        <br>
+        <tr>
+        <td>nationality</td>
+        <td><select name="continent" id="continent">
+            <option selected value="-1">Select your nationality</option>
+            <option value="1">United states</option>
+            <option value="2">UAE</option>
+            <option value="3">Egypt</option>
+            <option value="4">Syria</option>
+            <option value="5">Indian</option>
+            <option value="6">African</options>
+            <option value="7">Europian</options>
+        </select></td>
+        </tr>
+        <br>
+        <tr>
+        <td>Previous Jobs</td>
+            <td>
+            <select size="10px" multiple name="Hobbies" id="Hobbies">
+        <option selected value="-1">Select Your previous Jobs</option>
+        <option value="2">None</option>
+        <option value="3">Engineer</option>
+        <option value="4">Doctor</option>
+        <option value="5">police</option>
+        <option value="6">Teacher</option>
+        <option value="7">Agriculture</option>
+        <option value="8">Technology</option>
+        <option value="9">Scientist</option>
+        </select>
+        <br>
+    <tr>
+    <td>Salary</td>
+    <td><select name="salary" id="s1">
+        <option value="-1">Select your salary</option>
+        <option value="1">5,000-10,000</option>
+        <option value="2">10,00-20,000</option>
+        <option value="3">20,000-30,000</option>
+        <option value="4">30,000-40,000</option>
+        <option value="5">40,000-50,000</option>
+        <option value="6">50,000-60,000</option>
+    </select></td>
+    </tr>
+    </td>    
+    </tr>
+    <tr>
+    <td>
+   Upload your resume
+    </td>
+    <td><input accept="image/*" name="upload" type="file"></td>
+    </tr>
+     <tr>
+<td><input value="Submit" name="submit" type="submit"></td>
+<td><input value="reset" name="reset" type="reset"></td>
+     </tr> 
+    </form>
+    </table>
+</center>   
+</body>
+</html>
